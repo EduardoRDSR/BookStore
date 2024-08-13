@@ -10,7 +10,7 @@ class UserFactory(factory.django.DjangoModelFactory):
     username = factory.Faker('pystr')
 
     class Meta:
-        model: User
+        model = User
 
 class OrderFactory(factory.django.DjangoModelFactory):
     user = factory.SubFactory(UserFactory)
@@ -19,6 +19,7 @@ class OrderFactory(factory.django.DjangoModelFactory):
     def product(self, create, extracted, **kwargs):
         if not create:
             return
+        
         if extracted:
             for product in extracted:
                 self.product.add(product)
