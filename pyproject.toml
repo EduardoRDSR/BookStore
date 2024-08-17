@@ -16,6 +16,7 @@ django-debug-toolbar = "^4.4.6"
 flake8 = "^7.1.1"
 whitenoise = "^6.7.0"
 gunicorn = "^23.0.0"
+gitpython = "^3.1.43"
 
 
 [build-system]
