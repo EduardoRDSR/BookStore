@@ -1,0 +1,18 @@
+[36mdjango[39m [39;1m5.0.7[39;22m A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+|-- [33masgiref[39m >=3.7.0,<4
+|-- [33msqlparse[39m >=0.3.1
+`-- [33mtzdata[39m *
+[36mdjangorestframework[39m [39;1m3.15.2[39;22m Web APIs for Django, made easy.
+`-- [33mdjango[39m >=4.2
+    |-- [32masgiref[39m >=3.7.0,<4 
+    |-- [32msqlparse[39m >=0.3.1 
+    `-- [32mtzdata[39m * 
+[36mfactory-boy[39m [39;1m3.3.0[39;22m A versatile test fixtures replacement based on thoughtbot's factory_bot for Ruby.
+`-- [33mfaker[39m >=0.7.0
+    `-- [32mpython-dateutil[39m >=2.4 
+        `-- [35msix[39m >=1.5 
+[36mpytest[39m [39;1m8.3.2[39;22m pytest: simple powerful testing with Python
+|-- [33mcolorama[39m *
+|-- [33miniconfig[39m *
+|-- [33mpackaging[39m *
+`-- [33mpluggy[39m >=1.5,<2
