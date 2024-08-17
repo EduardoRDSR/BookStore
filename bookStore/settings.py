@@ -148,7 +148,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "django-insecure-4^4$58__(v9ci&sjow6c@!b7p#9ebz#ejh_s#g9w%5fi5%ib5x")
 
 DEBUG = int(os.environ.get("DEBUG", default=0))
 
