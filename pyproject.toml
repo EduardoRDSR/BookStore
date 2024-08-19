@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "bookStore"
+name = "bookstore"
 version = "0.1.0"
-description = "BookStore API"
+description = "bookstore API"
 authors = ["Eduardo Rodrigues <eduardobrasil2706@gmail.com>"]
 readme = "README.md"
 

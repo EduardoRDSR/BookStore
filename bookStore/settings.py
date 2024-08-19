@@ -58,12 +58,12 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
-ROOT_URLCONF = "bookStore.urls"
+ROOT_URLCONF = "bookstore.urls"
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        'DIRS': [os.path.join(BASE_DIR, 'bookStore', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'bookstore', 'templates')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -76,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "bookStore.wsgi.application"
+WSGI_APPLICATION = "bookstore.wsgi.application"
 
 
 # Database
