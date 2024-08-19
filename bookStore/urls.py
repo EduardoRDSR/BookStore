@@ -1,5 +1,5 @@
 """
-URL configuration for bookstore project.
+URL configuration for bookStore project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -20,10 +20,13 @@ from django.contrib import admin
 from django.urls import path, re_path, include
 from rest_framework.authtoken.views import obtain_auth_token
 
+from bookStore import views
+
 urlpatterns = [
     path("__debug__/", include(debug_toolbar.urls)),
     path("admin/", admin.site.urls),
     re_path("^bookstore/(?P<version>(v1|v2))/", include("order.viewsets.urls")),
     re_path("^bookstore/(?P<version>(v1|v2))/", include("product.viewsets.urls")),
     path("api-token-auth/", obtain_auth_token, name="api_token_auth"),
+    path("update_server/", views.update, name="update"),
 ]
